@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'ex2/loop'
   get 'main/abc'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   
@@ -6,5 +7,7 @@ Rails.application.routes.draw do
   
   get "contact_us",  to: "main#contact"
   get "welcome",  to: "main#welcome"
+
+  get "loop", to: "ex2#loop"
   
 end

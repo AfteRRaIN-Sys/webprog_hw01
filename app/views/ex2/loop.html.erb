@@ -1,0 +1,20 @@
+<h1>Ex2#loop</h1>
+<p>Find me in app/views/ex2/loop.html.erb</p>
+
+messege from web ==============================================================
+<p>
+<%if (@out1 == "error")%>
+	<%= "There is an error in your parameters"%>
+<%elsif @out1==@out2%>
+	<%= "Your a and b is equal so it is not needed to show anything"%>
+<%else%>
+	<%= "a is #{@out1} b is #{@out2}"%>
+	<p>
+	loop		
+	<br>
+	<%for i in [@out1,@out2].min..[@out1,@out2].max %>
+		<%= i%>
+	<%end%>
+	</p>
+<%end%>
+</p>
