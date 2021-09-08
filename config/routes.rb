@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'post_reader/read_post_from_id'
   get 'post_gen/create_post'
   get 'ex2/loop'
   get 'main/abc'
@@ -10,5 +11,9 @@ Rails.application.routes.draw do
   get "welcome",  to: "main#welcome"
 
   get "loop", to: "ex2#loop"
+  
+  get "post/create", to: "post_gen#create_post"
+
+  get "user/read", to: "post_reader#read_post_from_id"
   
 end
